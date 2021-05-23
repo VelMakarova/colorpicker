@@ -1,0 +1,35 @@
+.range-field:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+input[type=range].range-input {
+  -webkit-appearance: none;
+  width: 100%;
+
+  &::-webkit-slider-runnable-track {
+    border-radius: 5px;
+    height: 5px;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 10px;
+    background-color: $white;
+    border: 1px solid $border-color;
+    margin-top: -8px;
+    cursor: pointer;
+  }
+
+  &.red::-webkit-slider-runnable-track {
+    background: linear-gradient(90deg, #000 0%, #F00 100%);
+  }
+
+  &.green::-webkit-slider-runnable-track {
+    background: linear-gradient(90deg, #000 0%, #0F0 100%);
+  }
+  
+  &.blue::-webkit-slider-runnable-track {
+    background: linear-gradient(90deg, #000 0%, #00F 100%);
+  }
+}

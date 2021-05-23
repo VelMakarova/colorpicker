@@ -1,0 +1,51 @@
+.colorpicker-dropdown {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  border-radius: 2px;
+  background-color: $white;
+  
+  &:not(:empty) {
+    border: 1px solid $border-color;
+    padding: 10px;
+  }
+}
+
+.dropdown-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.dropdown-control {
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid $border-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $dropdown-hover;
+  }
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.color-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+
+  &:hover {
+    background-color: $dropdown-hover;
+  }
+}
+
+.color-item-thumb {
+  height: 20px;
+  width: 20px;
+}
